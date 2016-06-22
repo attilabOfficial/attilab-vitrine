@@ -1,0 +1,25 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.keosu.blue"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.keosu.blue"
+        },
+        "cordova-plugin-ble-central": {
+            "PACKAGE_NAME": "com.keosu.blue"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.keosu.blue"
+        }
+    }
+}

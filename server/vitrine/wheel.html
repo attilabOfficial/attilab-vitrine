@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Roue de la fortune - Vitrine connectée</title>
+
+		<meta charset="utf-8" />
+
+		<link rel="stylesheet" type="text/css" href="css/semantic-ui/semantic.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/vitrine.css" />
+		<link rel="stylesheet" type="text/css" href="css/wheel.css" />
+
+		<script type="text/javascript" src="js/jquery/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery/jquery.easing.js"></script>
+		<script type="text/javascript" src="js/semantic-ui/semantic.min.js"></script>
+		<script type="text/javascript" src="js/three/three.min.js"></script>
+		<script type="text/javascript" src="js/leap/leap.js"></script>
+		<script tpye="text/javascript" src="js/leap/leap.rigged-hand.js"></script>
+  	<script type="text/javascript" src="js/leap/leap-plugins-0.1.11pre.js"></script>
+
+		<script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/remote-control.js"></script>
+    <script type="text/javascript" src="js/vitrine.js"></script>
+		<script type="text/javascript" src="js/wheel.js"></script>
+
+	</head>
+	<body class="tuile second">
+
+		<div id="howto" class="ui basic small modal">
+
+			<div class="image content">
+
+				<div class="image">
+					<img src="img/howto.png" alt="" />
+				</div>
+
+				<div class="description">
+					<h2>Comment jouer ?</h2>
+					<h3>Décrivez des cercles avec votre doigt pour faire tourner la roue puis arrêtez pour découvrir votre gain !</h3>
+				</div>
+
+			</div></div>
+
+		</div>
+
+		<div id="win" class="ui basic small modal">
+
+			<i class="close icon"></i>
+
+			<div class="header">
+				Vous avez gagné!
+			</div>
+
+			<div class="content">
+
+				<p>Entrez votre adresse e-mail afin de récupérer votre gain : </p>
+
+				<div class="description">
+					<form class="ui inverted form">
+					  <div class="field">
+					    <input name="mail" placeholder="Adresse e-mail" type="text">
+					  </div>
+					</form>
+				</div>
+
+			</div>
+
+			<div class="actions">
+
+				<div class="ui green basic approve inverted button">
+
+					<i class="checkmark icon"></i>
+					Valider
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<header>
+			<a href="index.html"><i class="close big icon"></i></a>
+			<a href="index.html"><img src="img/logo_inverted.png" alt="Logo de Attilab" /></a>
+		</header>
+
+		<audio><source src="sound/wheel.mp3" type="audio/mp3"></audio>
+
+		<div id="wheel">
+			<img src="img/wheel.png" alt="" />
+		</div>
+
+		<div id="wheel-pointer">
+			<img src="img/wheel-pointer.png" alt="" />
+		</div>
+
+	</body>
+</html>
