@@ -1,0 +1,129 @@
+#stream {
+
+  position: fixed;
+  top:0; left:0;
+
+  width:100%; height:100%;
+  text-align: center;
+
+}
+
+#stream>img {
+
+  height:100%;
+  width:auto;
+
+}
+
+
+#animation {
+
+  opacity: 0;
+  transition: opacity 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  position:fixed;
+  top:0; left:0;
+
+  width:100%;
+  height:100%;
+
+}
+
+#animation>div {
+
+  margin:auto;
+  width:256px;
+
+  padding:32px;
+  background: rgba(0,0,0,0.6);
+  color:#fff;
+
+  border-radius: 16px;
+
+}
+
+#animation>div>img {
+  width:96px;
+  height:auto;
+}
+
+#battery {
+
+  width:96px;
+  height:auto;
+
+  position:fixed;
+
+  bottom:0;
+  right:16px;
+
+}
+
+.battery-0 {
+  animation: blink-animation 1s steps(2, start) infinite;
+  -moz-animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-moz-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+#loader {
+
+  top : 0;
+  left : 0;
+	position:fixed;
+
+	height:100%;
+	width:100%;
+
+	overflow: auto;
+
+	background: rgba(0,0,0,.6);
+
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+
+  z-index: 500;
+
+}
+
+.loading {
+
+	margin-right:16px;
+
+  width: 3em;
+  height: 3em;
+
+  -webkit-animation: segment-spin .6s linear;
+  animation: segment-spin .6s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  border-radius: 500rem;
+  border-color: #767676 rgba(0,0,0,.1) rgba(0,0,0,.1);
+  border-style: solid;
+  border-width: .2em;
+  box-shadow: 0 0 0 1px transparent;
+
+  visibility: visible;
+  z-index: 101;
+
+}

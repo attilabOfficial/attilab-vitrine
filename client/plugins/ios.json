@@ -1,0 +1,37 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-ble-central": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        },
+        "cordova-plugin-bluetooth-serial": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        },
+        "cordova-save-image-gallery": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.keosu.attilabrc"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+{
+    "CoreBluetooth.framework": 2,
+    "Social.framework": 1,
+    "MessageUI.framework": 1
+}

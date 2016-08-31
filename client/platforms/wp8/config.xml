@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.keosu.attilabrc" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="BluetoothSerial">
+        <param name="wp-package" value="BluetoothSerial" />
+    </feature>
+    <feature name="BLE">
+        <param name="wp-package" value="BLECentralPlugin" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="wp-package" value="StatusBar" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="wp-package" value="InAppBrowser" />
+    </feature>
+    <feature name="SaveImageGallery">
+        <param name="wp-package" value="SaveImageGallery" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="wp-package" value="SocialSharing" />
+    </feature>
+    <name>Attilab Remote Control</name>
+    <description>
+        Attilab Remote Control for the connected showcase
+    </description>
+    <author email="contact@attilab.io" href="http://attilab.io">
+        Attilab
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="*" />
+    <allow-navigation href="*" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="StatusBarBackgroundColor" value="#1b1c1d" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="Fullscreen" value="true" />
+    <preference name="BackgroundColor" value="0xff1b1c1d" />
+</widget>

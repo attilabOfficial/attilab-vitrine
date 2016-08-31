@@ -77,6 +77,17 @@ function goTo(dest) {
 
 /**
 *
+*   Triggered by the client
+*   --> does nothing at the moment
+*
+*/
+
+function option() {
+  return;
+}
+
+/**
+*
 *   Listens to keyboard events
 *
 */
@@ -109,8 +120,12 @@ $(window).keydown(function(event) {
       validate();
       break;
 
+    case 32:
+      option();
+      break;
+
     case 27:
-      document.location.href = 'index.html';
+      back();
       break;
 
     default:
@@ -121,6 +136,8 @@ $(window).keydown(function(event) {
   return false;
 
 });
+
+function motion() { return; }
 
 /**
 *

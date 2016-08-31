@@ -155,6 +155,44 @@ function validate() {
 
 }
 
+/**
+*
+*   Trigger actions according to movement detection
+*
+**/
+
+var motion_detected = false, motion_img = null, motion_index = 0, motion_direction = 1;
+
+function motion(detected) {
+
+  if(detected && !motion_detected) {
+
+    if(motion_img == null) return;
+    animation = setInterval(function() {
+
+      if(motion_index == 0) motion_direction = 1;
+      else if(motion_index == motion_img.length - 1) motion_direction = -1;
+
+      motion_img[motion_index].style = '';
+      motion_index = motion_index + motion_direction;
+      motion_img[motion_index].style = 'display:inline;';
+
+    }, 42);
+
+    motion_detected = true;
+
+  } else if(!detected && motion_detected) {
+
+    motion_img[motion_index].style = '';
+    motion_index = 0;
+    clearInterval(animation);
+
+    motion_detected = false;
+
+  }
+
+}
+
 /** Runtime */
 
 $(document).ready(function() {
@@ -181,6 +219,10 @@ $(document).ready(function() {
     }
 
   });
+
+  motion_img = $('#motion img');
+  $('#motion img').css('display', 'inline');
+  $('#motion img').css('display', 'none');
 
 })
 

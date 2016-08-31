@@ -1,0 +1,14 @@
+.square {
+
+  border : 0;
+  border-style: solid;
+  border-color: green;
+  border-bottom-width: 0;
+
+  transition: border-bottom-width 0.3s;
+
+}
+
+.on .square {
+  border-bottom-width: 8px;
+}

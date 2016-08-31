@@ -13,6 +13,35 @@ module.exports = [
         "clobbers": [
             "ble"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "id": "cordova-plugin-statusbar.statusbar",
+        "clobbers": [
+            "window.StatusBar"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-inappbrowser/www/inappbrowser.js",
+        "id": "cordova-plugin-inappbrowser.inappbrowser",
+        "clobbers": [
+            "cordova.InAppBrowser.open",
+            "window.open"
+        ]
+    },
+    {
+        "file": "plugins/cordova-save-image-gallery/www/saveImageGallery.js",
+        "id": "cordova-save-image-gallery.saveImageGallery",
+        "clobbers": [
+            "cordova.saveImageGallery"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-socialsharing/www/SocialSharing.js",
+        "id": "cordova-plugin-x-socialsharing.SocialSharing",
+        "clobbers": [
+            "window.plugins.socialsharing"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -21,7 +50,11 @@ module.exports.metadata =
     "cordova-plugin-bluetooth-serial": "0.4.5",
     "cordova-plugin-whitelist": "1.2.2",
     "cordova-plugin-compat": "1.0.0",
-    "cordova-plugin-ble-central": "1.1.0"
+    "cordova-plugin-ble-central": "1.1.0",
+    "cordova-plugin-statusbar": "2.1.3",
+    "cordova-plugin-inappbrowser": "1.4.0",
+    "cordova-save-image-gallery": "0.0.20",
+    "cordova-plugin-x-socialsharing": "5.1.1"
 };
 // BOTTOM OF METADATA
 });

@@ -8,12 +8,16 @@
 var ws;
 var device_connected = false;
 
+function handle(evt) {
+  return;
+}
+
 function WebSocketStart() {
 
   if("WebSocket" in window) {
 
     // Let us open a web socket
-    ws = new WebSocket("ws://127.0.0.1:9998/vitrine");
+    ws = new WebSocket("ws://" + window.location.hostname.split(':')[0] + ":9998/vitrine");
 
     ws.onopen = function() {
 
@@ -50,9 +54,14 @@ function WebSocketStart() {
         else if(evt.data == EVENTS.MOVE_DOWN) $(window).trigger(jQuery.Event("keydown", { which:40 , keyCode:40 }));
         else if(evt.data == EVENTS.VALIDATE) $(window).trigger(jQuery.Event("keydown", { which:13 , keyCode:13 }));
         else if(evt.data == EVENTS.BACK) $(window).trigger(jQuery.Event("keydown", { which:27 , keyCode:27 }));
+        else if(evt.data == EVENTS.OPTION) $(window).trigger(jQuery.Event("keydown", { which:32 , keyCode:32 }));
+        else if(evt.data == EVENTS.RELEASED) $(window).trigger(jQuery.Event("keyup"));
         else if(evt.data == EVENTS.HOME) goTo('index.html');
         else if(evt.data == EVENTS.CATALOG) goTo('catalog.html');
         else if(evt.data == EVENTS.ABOUT) goTo('about.html');
+        else if(evt.data == EVENTS.MOTION_YES) motion(true);
+        else if(evt.data == EVENTS.MOTION_NO) motion(false);
+        else handle(evt.data);
 
     };
 
@@ -75,4 +84,8 @@ function WebSocketStart() {
 
   }
 
+}
+
+function WebSocketSend(data) {
+  ws.send(data);
 }

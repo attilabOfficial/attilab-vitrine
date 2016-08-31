@@ -22,7 +22,7 @@
 }
 
 body {
-  overflow: hidden;
+  background: #1b1c1d;
 }
 
 header {
@@ -58,7 +58,7 @@ article .column:hover i, article .column:hover i {
   color:#01579b;
 }
 
-#loader {
+#loader, #photo-container {
 
   top : 0;
   left : 0;
@@ -77,6 +77,10 @@ article .column:hover i, article .column:hover i {
 
   z-index: 500;
 
+}
+
+#photo-container.off {
+  display:none;
 }
 
 .loading {

@@ -10,7 +10,11 @@ La vitrine connectée se présente tout d'abord sous la forme d'un menu à tuile
  - **Catalogue** : affiche un catalogue virtuel dont il est possible de tourner les pages avec la télécommande, le clavier ou à l'aide d'un Leap Motion.
 
  - **Roue de la fortune** : mini-jeu fonctionnant avec le Leap Motion. Faites tournez la roue avec votre doigt et arrêtez de tourner pour découvrir votre gain !
- - **Robot** : *(à venir..)* contrôlez à distance un Parrot Jumping Sumo et observez le retour vidéo !
+ - **Robot** : contrôlez à distance un Parrot Jumping Sumo et observez le retour vidéo !
+
+ - **Domotique** : allumez ou éteingez vos prises Chacon DiO !
+
+ - **Camera** : affiche à l'écran le retour vidéo de la caméra et permet de prendre des photos via l'application
 
  - **À propos** : affiche le site web d'Attilab
 
@@ -22,18 +26,26 @@ Dépendances
 - Node.js
 - Appareil compatible Bluetooth Low Energy
 - [Leap Motion](https://www.leapmotion.com/setup)
+- [UV4L](http://www.linux-projects.org/uv4l/installation/)
 
 **Client (Télécommande)**
 
 - Apache Cordova pour compiler et installer l'application
 - Appareil compatible Bluetooth Low Energy
 
+Installation
+------------
+
+Dans le dossier **server** du projet, effectuez la commande suivante :
+
+    npm install
+
 Guide de démarrage
 ------------
 
 Sur le serveur, lancez le script **server.js** situé dans le dossier **server** à l'aide de la commande suivante. *(Des droits administrateurs peuvent être nécessaire afin d'utiliser le Bluetooth LE)*
 
-    nodejs server/server.js
+    npm run
 
 Puis ouvrez la page **index.html** située dans le dossier **server/vitrine** avec votre navigateur favori. Cela aura pour effet d'afficher la page de téléchargement de l'application jusqu'à ce qu'un client se connecte.
 
@@ -52,7 +64,11 @@ The connected showcase starts on a tile menu from which each tile brings to a sp
 
  - **Wheel of fortune** *(Roue de la fortune)* : game working with the Leap Motion. Make the wheel spin using your finger and stop to discover your gift!
 
- - **Robot** : *(soon..)* control remotely a Parrot Jumping Sumo and watch the video stream.
+ - **Robot** : control remotely a Parrot Jumping Sumo and watch the video stream.
+
+ - **Automation** *(Domotique)* : Control your Chacon DiO outlets!
+
+ - **Camera** : Display camera and take photos with the application
 
  - **About**  *(À propos)* : displays Attilab's website
 
@@ -64,18 +80,26 @@ Dependencies
 - Node.js
 - Bluetooth Low Energy compatible device
 - [Leap Motion](https://www.leapmotion.com/setup)
+- [UV4L](http://www.linux-projects.org/uv4l/installation/)
 
 **Client (Remote Control)**
 
 - Apache Cordova to build and install the application
 - Bluetooth Low Energy compatible device
 
+Installation
+------------
+
+In the **server** folder, run the following command
+
+    npm install
+
 Getting started
 ------------
 
 On the server run the script called **server.js** which is in the folder **server** using the following command. *(Admin rights might be necessary to use the Bluetooth)*
 
-    nodejs server/server.js
+    npm run
 
 Then, open the **index.html** webpage which is in the folder **server/vitrine** with your favourite browser. This will display a download page until a client is connected.
 

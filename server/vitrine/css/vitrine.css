@@ -9,6 +9,15 @@ body.tuile {
 
 }
 
+.tuile.no-bg {
+	
+	background-color: transparent;
+	background-image: url("../img/vitrine_overlay.png"), url("../img/vitrine_background.jpg");
+	background-repeat: repeat, no-repeat;
+	background-size : auto, cover;
+
+}
+
 header {
 
 	z-index:100;
@@ -38,6 +47,26 @@ h1~p {
 	margin-top: 32px;
 }
 
+#motion img {
+
+	display: none;
+
+	position: fixed;
+	bottom:0; right:0;
+
+	width:640px; height:360px;
+	z-index: 100;
+
+}
+
+#motion .icon {
+	/*font-size: 128px!important;*/
+}
+
+#motion #popup {
+	display: inline;
+}
+
 #loader {
 
 	position:fixed;
@@ -50,8 +79,8 @@ h1~p {
 	background-color: #f6f6f6;
 	background-image: url("../img/app.png"), url("../img/vitrine_overlay.png"), url("../img/vitrine_background.jpg");
 	background-repeat: no-repeat, repeat, no-repeat;
-	background-position: 85% 100%, center, center;
-	background-size : auto, auto, cover;
+	background-position: bottom right, center, center;
+	background-size : 50%, auto, cover;
 
 	display:flex;
 	flex-direction: column;
